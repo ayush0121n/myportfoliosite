@@ -33,7 +33,7 @@ export function Hero() {
       </svg>
 
       <motion.div style={{ y, opacity }} className="relative z-10">
-        <div className="font-display text-[clamp(3.5rem,16vw,18rem)] leading-[0.82]">
+                <div className="font-display text-[clamp(3.5rem,16vw,18rem)] leading-[0.82] space-y-6">
           {["AI ENGINEER.", "FULL-STACK", "DEVELOPER", "BY CRAFT."].map((line, i) => (
             <div key={i} className="overflow-hidden">
               <motion.div
@@ -41,7 +41,7 @@ export function Hero() {
                 initial="hidden"
                 animate="show"
                 variants={reveal}
-                className={i === 3 ? "text-flame italic" : ""}
+                className={`${i === 3 ? "text-flame italic" : ""} mb-4`}
               >
                 {line}
               </motion.div>

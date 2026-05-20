@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { TiltCard } from "./TiltCard";
 import { Unroll } from "./Unroll";
-import work1 from "@/assets/work-1.jpg";
-import work2 from "@/assets/work-2.jpg";
-import work3 from "@/assets/work-3.jpg";
+import malariascopeCover from "@/assets/malariascope_cover.png";
+import estatexaiCover from "@/assets/estatexai_cover.png";
+import proconnectCover from "@/assets/proconnect_cover.png";
 
 const projects = [
   {
@@ -11,7 +11,7 @@ const projects = [
     title: "MalariaScope",
     desc: "AI-powered malaria detection — 93% val accuracy, 0.97 ROC-AUC on 27,558 NIH blood-smear images.",
     tag: "Python · TensorFlow · Flask",
-    img: work1,
+    img: malariascopeCover,
     href: "https://github.com/ayush0121n/malaria-detection",
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     title: "EstateXAI",
     desc: "AI-driven real estate & PG finder. MERN, role-based auth, 9 REST endpoints, geospatial filters.",
     tag: "MERN · JWT · Vercel",
-    img: work2,
+    img: estatexaiCover,
     href: "https://estate-xai.vercel.app",
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     title: "ProConnect",
     desc: "Professional networking platform with real-time Socket.IO messaging and 20+ atomic-design components.",
     tag: "React 19 · TS · Socket.IO",
-    img: work3,
+    img: proconnectCover,
     href: "https://github.com/ayush0121n/ai",
   },
 ];
