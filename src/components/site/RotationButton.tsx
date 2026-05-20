@@ -6,7 +6,11 @@ interface Props {
   label?: string;
 }
 
-export function RotationButton({ text = "AVAILABLE FOR HIRE • 2026 • ", href = "#contact", label = "Hire" }: Props) {
+export function RotationButton({
+  text = "AVAILABLE FOR HIRE • 2026 • ",
+  href = "#contact",
+  label = "Hire",
+}: Props) {
   const chars = text.split("");
   return (
     <motion.a
@@ -23,7 +27,10 @@ export function RotationButton({ text = "AVAILABLE FOR HIRE • 2026 • ", href
         transition={{ repeat: Infinity, duration: 14, ease: "linear" }}
       >
         <defs>
-          <path id="circlePath" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
+          <path
+            id="circlePath"
+            d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"
+          />
         </defs>
         <text className="text-[14px] uppercase tracking-[0.3em] fill-current font-display">
           <textPath href="#circlePath">{chars.join("").repeat(2)}</textPath>

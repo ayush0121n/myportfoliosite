@@ -1,7 +1,21 @@
-import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useMotionValue,
+  useTransform,
+  animate,
+} from "framer-motion";
 import { useEffect, useRef } from "react";
 
-function Counter({ to, suffix = "", decimals = 0 }: { to: number; suffix?: string; decimals?: number }) {
+function Counter({
+  to,
+  suffix = "",
+  decimals = 0,
+}: {
+  to: number;
+  suffix?: string;
+  decimals?: number;
+}) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-50px" });
   const mv = useMotionValue(0);
@@ -15,7 +29,12 @@ function Counter({ to, suffix = "", decimals = 0 }: { to: number; suffix?: strin
 const stats = [
   { v: 8.58, s: "", d: 2, label: "CGPA in MCA (AI), Sri Balaji University" },
   { v: 93, s: "%", d: 0, label: "Validation accuracy on MalariaScope CNN" },
-  { v: 10, s: "+", d: 0, label: "Industry certifications (Oracle, IBM, Deloitte)" },
+  {
+    v: 10,
+    s: "+",
+    d: 0,
+    label: "Industry certifications (Oracle, IBM, Deloitte)",
+  },
   { v: 2000, s: "+", d: 0, label: "Students led as Council President" },
 ];
 
@@ -23,8 +42,13 @@ export function Stats() {
   return (
     <section className="px-6 md:px-10 py-24 md:py-40 border-t border-border">
       <div className="flex items-end justify-between mb-16">
-        <h2 className="font-display text-[clamp(3rem,8vw,9rem)]">Numbers <br /><span className="text-flame italic">that ship.</span></h2>
-        <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">(Why me)</span>
+        <h2 className="font-display text-[clamp(3rem,8vw,9rem)]">
+          Numbers <br />
+          <span className="text-flame italic">that ship.</span>
+        </h2>
+        <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          (Why me)
+        </span>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border">
         {stats.map((s, i) => (
@@ -39,7 +63,9 @@ export function Stats() {
             <div className="font-display text-6xl md:text-8xl text-flame">
               <Counter to={s.v} suffix={s.s} decimals={s.d} />
             </div>
-            <p className="mt-4 text-sm text-muted-foreground max-w-[20ch]">{s.label}</p>
+            <p className="mt-4 text-sm text-muted-foreground max-w-[20ch]">
+              {s.label}
+            </p>
           </motion.div>
         ))}
       </div>

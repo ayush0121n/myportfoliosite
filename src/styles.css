@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -69,7 +69,8 @@
   * {
     border-color: var(--color-border);
   }
-  html, body {
+  html,
+  body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
@@ -88,10 +89,18 @@
     line-height: 0.85;
     text-transform: uppercase;
   }
-  .text-flame { color: var(--color-flame); }
-  .bg-flame { background-color: var(--color-flame); }
-  .bg-bone { background-color: var(--color-bone); }
-  .text-ink { color: var(--color-ink); }
+  .text-flame {
+    color: var(--color-flame);
+  }
+  .bg-flame {
+    background-color: var(--color-flame);
+  }
+  .bg-bone {
+    background-color: var(--color-bone);
+  }
+  .text-ink {
+    color: var(--color-ink);
+  }
 
   .marquee {
     display: flex;
@@ -106,8 +115,12 @@
     animation: marquee 40s linear infinite;
   }
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
 
   .grain::before {

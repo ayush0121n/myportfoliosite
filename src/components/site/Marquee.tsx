@@ -6,7 +6,10 @@ export function Marquee({ items, className = "" }: Props) {
     <div className={`marquee ${className}`}>
       <div className="marquee-track">
         {loop.map((it, i) => (
-          <span key={i} className="font-display text-[clamp(3rem,9vw,9rem)] whitespace-nowrap">
+          <span
+            key={i}
+            className="font-display text-[clamp(3rem,9vw,9rem)] whitespace-nowrap"
+          >
             {it} <span className="text-flame">✦</span>
           </span>
         ))}

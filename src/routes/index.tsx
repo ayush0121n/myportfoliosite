@@ -16,7 +16,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Ayush Narkhede — AI/ML Engineer & Full-Stack Developer" },
-      { name: "description", content: "Oracle-certified AI/ML Engineer and MCA (AI) candidate building deep learning systems and MERN applications." },
+      {
+        name: "description",
+        content:
+          "Oracle-certified AI/ML Engineer and MCA (AI) candidate building deep learning systems and MERN applications.",
+      },
     ],
   }),
 });
@@ -28,7 +32,16 @@ function Index() {
       <Nav />
       <Hero />
       <section className="py-8 border-y border-border overflow-hidden">
-        <Marquee items={["AI / ML", "MERN Stack", "TensorFlow", "React", "Node.js", "Oracle Cloud"]} />
+        <Marquee
+          items={[
+            "AI / ML",
+            "MERN Stack",
+            "TensorFlow",
+            "React",
+            "Node.js",
+            "Oracle Cloud",
+          ]}
+        />
       </section>
       <Work />
       <About />

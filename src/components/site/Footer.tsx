@@ -3,33 +3,80 @@ import { RotationButton } from "./RotationButton";
 
 export function Footer() {
   return (
-    <footer id="contact" className="relative border-t border-border bg-flame text-ink overflow-hidden">
+    <footer
+      id="contact"
+      className="relative border-t border-border bg-flame text-ink overflow-hidden"
+    >
       <div className="overflow-hidden py-10 border-b border-ink/20">
-        <Marquee items={["Let's build something", "Available for hire", "Say hello"]} />
+        <Marquee
+          items={["Let's build something", "Available for hire", "Say hello"]}
+        />
       </div>
       <div className="relative px-6 md:px-10 py-20 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <div className="font-display text-5xl">AYUSH<sup className="text-base align-super">®</sup></div>
-          <p className="mt-4 text-sm max-w-xs">Ayush Gajanan Narkhede — AI/ML Engineer, Full-Stack Developer based in Pune, India.</p>
+          <div className="font-display text-5xl">
+            AYUSH<sup className="text-base align-super">®</sup>
+          </div>
+          <p className="mt-4 text-sm max-w-xs">
+            Ayush Gajanan Narkhede — AI/ML Engineer, Full-Stack Developer based
+            in Pune, India.
+          </p>
         </div>
         <div>
           <h4 className="text-xs uppercase tracking-[0.25em] mb-4">Contact</h4>
-          <a href="mailto:ayushgnarkhede0121@gmail.com" className="font-display text-2xl md:text-3xl block hover:underline break-all">ayushgnarkhede0121@gmail.com</a>
+          <a
+            href="mailto:ayushgnarkhede0121@gmail.com"
+            className="font-display text-2xl md:text-3xl block hover:underline break-all"
+          >
+            ayushgnarkhede0121@gmail.com
+          </a>
           <p className="mt-2 text-sm">Pune, Maharashtra · India</p>
         </div>
         <div className="flex md:justify-end">
           <div>
-            <h4 className="text-xs uppercase tracking-[0.25em] mb-4">Elsewhere</h4>
+            <h4 className="text-xs uppercase tracking-[0.25em] mb-4">
+              Elsewhere
+            </h4>
             <ul className="space-y-2 text-lg">
-              <li><a href="https://github.com/ayush0121n" target="_blank" rel="noreferrer" className="hover:underline">GitHub ↗</a></li>
-              <li><a href="https://linkedin.com/in/ayush-narkhede-946638345" target="_blank" rel="noreferrer" className="hover:underline">LinkedIn ↗</a></li>
-              <li><a href="https://ayushdevx.onrender.com" target="_blank" rel="noreferrer" className="hover:underline">Portfolio ↗</a></li>
+              <li>
+                <a
+                  href="https://github.com/ayush0121n"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  GitHub ↗
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/ayush-narkhede-946638345"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  LinkedIn ↗
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ayushdevx.onrender.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  Portfolio ↗
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="md:absolute md:right-10 md:top-10">
           <div className="[&_a]:!bg-ink [&_a]:!text-flame">
-            <RotationButton text="GET IN TOUCH • EMAIL ME • " href="mailto:ayushgnarkhede0121@gmail.com" />
+            <RotationButton
+              text="GET IN TOUCH • EMAIL ME • "
+              href="mailto:ayushgnarkhede0121@gmail.com"
+            />
           </div>
         </div>
       </div>

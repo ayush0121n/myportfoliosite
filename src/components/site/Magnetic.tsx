@@ -1,7 +1,13 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef, type ReactNode } from "react";
 
-export function Magnetic({ children, strength = 0.3 }: { children: ReactNode; strength?: number }) {
+export function Magnetic({
+  children,
+  strength = 0.3,
+}: {
+  children: ReactNode;
+  strength?: number;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -21,7 +27,12 @@ export function Magnetic({ children, strength = 0.3 }: { children: ReactNode; st
   };
 
   return (
-    <motion.div ref={ref} onMouseMove={onMove} onMouseLeave={onLeave} style={{ x: sx, y: sy }}>
+    <motion.div
+      ref={ref}
+      onMouseMove={onMove}
+      onMouseLeave={onLeave}
+      style={{ x: sx, y: sy }}
+    >
       {children}
     </motion.div>
   );

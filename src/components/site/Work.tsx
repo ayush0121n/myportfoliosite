@@ -34,10 +34,17 @@ const projects = [
 
 export function Work() {
   return (
-    <section id="work" className="px-6 md:px-10 py-24 md:py-40 border-t border-border">
+    <section
+      id="work"
+      className="px-6 md:px-10 py-24 md:py-40 border-t border-border"
+    >
       <div className="flex items-end justify-between mb-16">
-        <h2 className="font-display text-[clamp(3rem,8vw,9rem)]">Selected <span className="text-flame italic">work</span></h2>
-        <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">(03 / 2025)</span>
+        <h2 className="font-display text-[clamp(3rem,8vw,9rem)]">
+          Selected <span className="text-flame italic">work</span>
+        </h2>
+        <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          (03 / 2025)
+        </span>
       </div>
 
       <Unroll>
@@ -51,7 +58,11 @@ export function Work() {
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
+              transition={{
+                duration: 0.8,
+                delay: i * 0.12,
+                ease: [0.22, 1, 0.36, 1],
+              }}
               className="group block"
             >
               <TiltCard className="relative overflow-hidden aspect-[4/5] bg-muted">
@@ -66,7 +77,9 @@ export function Work() {
                   transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute top-4 left-4 text-xs uppercase tracking-[0.2em] text-bone mix-blend-difference">{p.n}</div>
+                <div className="absolute top-4 left-4 text-xs uppercase tracking-[0.2em] text-bone mix-blend-difference">
+                  {p.n}
+                </div>
                 <motion.div
                   className="absolute bottom-4 right-4 size-12 rounded-full bg-flame text-ink flex items-center justify-center opacity-0 group-hover:opacity-100"
                   initial={{ scale: 0, rotate: -90 }}
@@ -78,8 +91,12 @@ export function Work() {
                 </motion.div>
               </TiltCard>
               <div className="mt-5 flex items-baseline justify-between gap-4">
-                <h3 className="font-display text-3xl group-hover:text-flame transition-colors">{p.title}</h3>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground text-right">{p.tag}</span>
+                <h3 className="font-display text-3xl group-hover:text-flame transition-colors">
+                  {p.title}
+                </h3>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground text-right">
+                  {p.tag}
+                </span>
               </div>
               <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
             </motion.a>
