@@ -1,14 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
-@font-face {
-  font-family: "Anton";
-  src: url("https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm0K08i4gS7lu.woff2") format("woff2");
-  font-display: swap;
-}
 
 @theme inline {
   --radius-sm: 0px;
