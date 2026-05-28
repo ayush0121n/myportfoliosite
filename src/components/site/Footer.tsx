@@ -31,9 +31,8 @@ export function Footer() {
             ayushgnarkhede0121@gmail.com
           </a>
           <p className="mt-2 text-sm">Pune, Maharashtra · India</p>
-        </div>
-        <div className="flex md:justify-end">
-          <div>
+
+          <div className="mt-8">
             <h4 className="text-xs uppercase tracking-[0.25em] mb-4">
               Elsewhere
             </h4>
@@ -71,6 +70,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
+        <div></div>
         <div className="md:absolute md:right-10 md:top-10">
           <div className="[&_a]:!bg-ink [&_a]:!text-flame">
             <RotationButton
